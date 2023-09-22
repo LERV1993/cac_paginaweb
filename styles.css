@@ -24,6 +24,7 @@
 
 html {
     overflow-x: hidden;
+    width: 100vw;
 }
 
 .grid {
@@ -112,6 +113,7 @@ html {
     margin-top: 5rem;
     opacity: 0;
     transform: translateX(100%);
+    width: 100vw;
 }
 
 /* ------------- FIN BANNER ------------- */
@@ -251,7 +253,7 @@ footer{
     color: var(--white);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-    gap: 5px;
+    gap: 10px;
 }
 
 .imgFoot{
@@ -272,6 +274,8 @@ footer{
 .redesIcons{
     width: 100%;
     font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 .redesIcons a {
@@ -282,6 +286,11 @@ footer{
 
 .redesIcons a:hover{
     color: var(--secondary);
+}
+
+.textRedes{
+    width: 90%;
+    margin: auto;
 }
 
 .subFooter{
