@@ -10,9 +10,11 @@ Desarrollo de pagina web con los contenidos vistos
 
 ## Acerca de la página web
 
-El objetivo de página desarrollada es unificar las distintas plataformas utilizadas por los alumnos y reforzar el contenido informativo de la cursada, también se brindan accesos a canales de comunicación, Google drive, Canal de Youtube, Meet, Aula virtual y Presentismo.
+El objetivo de la página desarrollada es unificar las distintas plataformas utilizadas por los alumnos y reforzar el contenido informativo de la cursada, también se brindan accesos a canales de comunicación, Google drive, Canal de Youtube, Meet, Aula virtual y Presentismo.
 
-
+Se utiliza un setTimeout para poder ir cambiando las imagenes.
+Posee una validación en su formulario e imprime por consola los datos en caso de que sea valido.
+Se utilizo CSS puro y bootstrap para su maquetado.
 
 ## Authors
 
