@@ -244,6 +244,7 @@ main {
 /* ------------- FOOTER ------------- */
 
 footer{
+    margin: -3px 0 0 0;
     min-height: 40vh;
     width: 100vw;
     background-image: linear-gradient( var(--sixth-bg)10%, var(--black)100%);
@@ -284,6 +285,7 @@ footer{
 }
 
 .subFooter{
+    margin: -3px 0 0 0;
     width: 100%;
     background-color: var(--black);
     color: var(--white);
