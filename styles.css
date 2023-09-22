@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: nunito;
+    --font-white: white;
+    --font-black: black;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #646464;
+    --light-primary: #5101c1;
+    --primary: #650094;
+    --primary--hover: #2f0344;
+    --secondary: #FFD200;
+    --secondary-hover: #ffae00;
+    --first-bg: #13011d;
+    --second-bg: #08085a;
+    --third-bg: #4e06a5;
+    --fourth-bg: #5d0c2c;
+    --fifth-bg: #b2074b;
+    --sixth-bg: #170036;
+
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.grid {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 10px;
+    justify-content: center;
+}
+
+/* ------------- NAV ------------- */
+.navbar {
+    height: 3rem;
+    padding: 0;
+    background-color: var(--black);
+    width: 100vw;
+    position: fixed;
+    inset: 0 0;
+    z-index: 30;
+}
+
+.navul {
+    margin: auto;
+    padding: 0;
+    height: 100%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navli {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    transition: all .5s;
+}
+
+.navli a {
+    text-decoration: none;
+    color: var(--font-white);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navli:nth-child(2):hover,
+.navli:nth-child(4):hover {
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.navli:nth-child(1):hover,
+.navli:nth-child(3):hover {
+    background-color: var(--secondary);
+    color: var(--black);
+    font-weight: bold;
+}
+
+/* ------------- FIN NAV ------------- */
+/* ------------- BANNER ------------- */
+
+.banner {
+    width: 100vw;
+    height: calc(100vw / 100vh) *100;
+    background-image: linear-gradient(var(--first-bg), var(--second-bg));
+    padding-bottom: 1rem;
+}
+
+#imgBanner {
+    width: 100vw;
+    padding: 1rem;
+    height: calc(100vw / 100vh) *100;
+    margin-top: 5rem;
+    transition: opacity .5s, transform .5s;
+}
+
+.hidden {
+    margin-top: 5rem;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+/* ------------- FIN BANNER ------------- */
+
+/* ------------- MAIN ------------- */
+
+main {
+    margin-top: -3px;
+    width: 100vw;
+}
+
+/* ------------- FIN MAIN ------------- */
+
+/* ------------- BIENVENIDA ------------- */
+
+.bienvenidaSec {
+    width: 100%;
+    padding: 2rem 0;
+    background-image: linear-gradient(var(--second-bg), var(--third-bg));
+}
+
+#bienvenida {
+    width: 95%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+/* ------------- FIN BIENVENIDA ------------- */
+
+/* ------------- COMISIÓN ------------- */
+.comisionSec {
+    min-height: 40vh;
+    margin: -3px 0 0 0;
+    width: 100%;
+    background-image: linear-gradient(var(--third-bg), var(--fourth-bg));
+    padding-bottom: 3rem;
+}
+
+.comisionTitle {
+    color: var(--white);
+    width: 95%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+/* -------------FIN COMISIÓN ------------- */
+
+/* ------------- EXPERIENCIAS ------------- */
+.videoSec{
+    min-height: 40vh;
+    margin: -3px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(var(--fourth-bg),var(--fifth-bg));
+}
+
+#experiencias{
+    width: 95%;
+    text-align: start;
+}
+
+.videoCAC{
+    height: 85vh;
+    width: 95%;
+    margin: 1rem 0;
+}
+
+/* ------------- FIN EXPERIENCIAS ------------- */
+
+/* ------------- CONTACTO ------------- */
+
+.contactoSection{
+    width: 100%;
+    min-height: 40vh;
+    padding: 0 0 3rem 0;
+    margin: -3px 0 0 0;
+    background-image: linear-gradient(var(--fifth-bg), var(--sixth-bg));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contacto{
+    width: 95%;
+    text-align: start;
+    padding: 2rem 0;
+}
+
+.decoForm{
+    width: 100%;
+    display: flex;
+    padding-top: 1rem;
+    margin-bottom: -.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.formTitle{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formCard{
+    width: 95%;
+}
+
+.botones{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+}
+
+@media(max-width: 1100px) {
+    .botones{
+        width: 100%;
+    }
+}
+
+/* ------------- FIN CONTACTO ------------- */
+
+/* ------------- FOOTER ------------- */
+
+footer{
+    min-height: 40vh;
+    width: 100vw;
+    background-image: linear-gradient( var(--sixth-bg)10%, var(--black)100%);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 5px;
+}
+
+.imgFoot{
+    width: 50%;
+    margin: auto;
+}
+
+.footerContainer{
+    width: 100%;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.redesIcons{
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+.redesIcons a {
+    text-decoration: none;
+    color: var(--white);
+    transition: all .5s;
+}
+
+.redesIcons a:hover{
+    color: var(--secondary);
+}
+
+.subFooter{
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: bold;
+    text-align: center;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
