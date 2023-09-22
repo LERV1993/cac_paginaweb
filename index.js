@@ -1,6 +1,6 @@
 // ---------- Banner imagenes
 const imgBanner = document.getElementById("imgBanner");
-const images = ["/images/banner0.png", "/images/banner1.png", "/images/banner2.png"];
+const images = ["images/banner0.png", "images/banner1.png", "images/banner2.png"];
 let currentIndex = 0;
 
 // ---------- Formulario
