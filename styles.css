@@ -96,7 +96,7 @@ html {
 
 .banner {
     width: 100vw;
-    height: calc(100vw / 2.5);
+    height: calc(100vw * 0.46);
     background-image: linear-gradient(var(--first-bg), var(--second-bg));
     padding-bottom: 1rem;
 }
