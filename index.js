@@ -39,10 +39,12 @@ class validateForm {
 
     validateName() {
         if (nameInput.value.length >= 2 & nameInput.value.length <= 15) {
+            nameInput.className = "form-control is-valid";
             nameErr.style.display = "none";
             this.valid[0] = true;
 
         } else {
+            nameInput.className = "form-control is-invalid";
             nameErr.style.display = "block";
             this.valid[0] = false;
         }
@@ -50,9 +52,11 @@ class validateForm {
 
     validateScName() {
         if (scname.value.length >= 2 & scname.value.length <= 15) {
+            scname.className = "form-control is-valid";
             scnameErr.style.display = "none";
             this.valid[1] = true;
         } else {
+            scname.className = "form-control is-invalid";
             scnameErr.style.display = "block";
             this.valid[1] = false;
         }
@@ -61,9 +65,11 @@ class validateForm {
     validateEmail() {
         const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (regexEmail.test(email.value)) {
+            email.className = "form-control is-valid";
             emailErr.style.display = "none";
             this.valid[2] = true;
         } else {
+            email.className = "form-control is-invalid";
             emailErr.style.display = "block";
             this.valid[2] = false;
         }
@@ -71,9 +77,11 @@ class validateForm {
 
     validateCourse() {
         if (course.value == "1" || course.value == "2" || course.value == "3") {
+            course.className = "form-control is-valid";
             courseErr.style.display = "none";
             this.valid[3] = true;
         } else {
+            course.className = "form-control is-invalid";
             courseErr.style.display = "block";
             this.valid[3] = false;
         }
@@ -81,9 +89,11 @@ class validateForm {
 
     validateComments() {
         if (comments.value.length > 10) {
+            comments.className = "form-control is-valid";
             commentsErr.style.display = "none";
             this.valid[4] = true;
         } else {
+            comments.className = "form-control is-invalid";
             commentsErr.style.display = "block";
             this.valid[4] = false;
         }
@@ -194,6 +204,12 @@ function resetForm() {
     emailErr.style.display = "none";
     courseErr.style.display = "none";
     commentsErr.style.display = "none";
+    nameInput.className = "form-control";
+    scname.className = "form-control";
+    email.className = "form-control";
+    course.className = "form-control";
+    comments.className = "form-control";
+
 }
 
 changeImage();
